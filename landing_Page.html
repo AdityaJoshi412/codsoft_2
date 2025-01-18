@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    /* Reset Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background: #007BFF;
+      color: #f3d3d3;
+      padding: 1rem 0;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 1.5rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #007BFF;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    /* Features Section */
+    .features {
+      background: #fff;
+      padding: 2rem 1rem;
+    }
+    .features h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .feature-box {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .feature {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Footer */
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Website Builder</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Website Builder</h2>
+      <p>Build beautiful websites effortlessly. Discover the power of simplicity and creativity.</p>
+      <a href="#features" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h3>Features</h3>
+      <div class="feature-box">
+        <div class="feature">
+          <h4>Responsive Design</h4>
+          <p>Looks great on all devices.</p>
+        </div>
+        <div class="feature">
+          <h4>Customizable</h4>
+          <p>Tailor the design to your needs.</p>
+        </div>
+        <div class="feature">
+          <h4>Easy to Use</h4>
+          <p>Intuitive and user-friendly interface.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MyLandingPage. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
